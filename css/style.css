@@ -129,7 +129,10 @@ ol,
     outline: none;  
 }
 
-.current { color: var(--color-iris); }
+.current {
+    color: var(--color-iris);
+    text-decoration: underline;
+ }
 
 .contact-item-link[href*="tel:"]{ text-transform: uppercase; }
 .menu-item-link {
@@ -250,7 +253,7 @@ ol,
 
 .features { padding-bottom: 0; }
 
-/* Sections Features, Products, Team */
+/* ---------- Sections Features, Products, Team --------*/
 .feature-list,
 .product-list,
 .team-list,
@@ -267,21 +270,6 @@ ol,
 .filter-item:last-child { margin-right: 0; }
 
 
-/* - icons - */
-/* .feature-item::before {
-    display: block;
-    content: "";
-    height: 112px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--color-light);
-    margin-bottom: 8px;
-} */
-/* .icon-antenna::before { background-image: url(../images/antenna.svg); }
-.icon-clock::before{ background-image: url(../images/clock.svg); }
-.icon-diagram::before { background-image: url(../images/diagram.svg); }
-.icon-astronaut::before { background-image: url(../images/astronaut.svg); } */
-
 .feature-card {
     display: flex;
     align-items: center;
@@ -294,6 +282,23 @@ ol,
 .feature-card-icon {
     width: 64px;
     height: 64px;
+}
+
+/* Products */
+.product-card {
+    position: relative;
+}
+.product-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 32px 16px 16px 16px;
+
+    background-color: var(--color-subtle-text);
+    color: var(--color-text);
+    opacity: 0.7;
 }
 
 
