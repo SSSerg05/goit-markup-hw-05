@@ -324,7 +324,7 @@ ol,
     left: 0;
     width: 100%;
 
-    padding: 32px 16px 16px 16px;
+    padding: 16px;
 
     background-color: var(--color-subtle-text);
     color: var(--color-text);
