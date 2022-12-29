@@ -145,7 +145,10 @@ ol,
     background-color: red;
 
     opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scaleX(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                
 }
 
 .current {
@@ -168,6 +171,7 @@ ol,
 }
 .menu-item-link:hover::after {
     opacity: 1;
+    transform: scaleX(1);
 }
 
 
