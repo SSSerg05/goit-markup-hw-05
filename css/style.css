@@ -558,6 +558,8 @@ ol,
 .link-footer-social-icon { 
     width: 24px;
     height: 24px;
+    overflow-x: visible;
+    overflow-y: visible;
     fill: var(--color-white);
 }
 
