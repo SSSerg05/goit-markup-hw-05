@@ -43,16 +43,16 @@
         <section class="section presentation bg-image center">
             <div class="container">
                 <!-- Section Presentation -->
-                <div class="overlay is-hidden" data-backdrop>
+                <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <button class="btn-modal">
+                        <button class="btn-modal" data-modal-close>
                             
                         </button>
                     </div>
                 </div>
 
                 <h1 class="title title-main white">Effective Solutions<br>for Your Business</h1>
-                <button class="btn btn-main white" type="button">Order Service</button>
+                <button class="btn btn-main white" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
 
@@ -471,6 +471,8 @@
             </ul>
         </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 
