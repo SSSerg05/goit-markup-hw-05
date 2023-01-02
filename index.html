@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="body">
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn-icon btn-modal" data-modal-close>
+                <svg class="btn-modal-icon">
+                    <use href="./images/icons-2.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
     <header class="header">
         <!-- Header -->
         <div class="container">
@@ -38,12 +47,12 @@
         </div>
     </header>
 
-    <main>
+    <main class="main">
         <!-- Main -->
         <section class="section presentation bg-image center">
             <div class="container">
                 <!-- Section Presentation -->
-                <div class="backdrop is-hidden" data-modal>
+                <!-- <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         <button class="btn-icon btn-modal" data-modal-close>
                             <svg class="btn-modal-icon">
@@ -51,7 +60,7 @@
                             </svg>
                         </button>
                     </div>
-                </div>
+                </div> -->
 
                 <h1 class="title title-main white">Effective Solutions<br>for Your Business</h1>
                 <button class="btn btn-main white" type="button" data-modal-open>Order Service</button>
