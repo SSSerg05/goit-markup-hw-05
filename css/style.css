@@ -332,6 +332,10 @@ ol,
     width: 24px;
     height: 24px;
     
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
     border-radius: 50%;
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
