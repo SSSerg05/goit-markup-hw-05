@@ -14,18 +14,6 @@
 </head>
 <body class="body">
 
-    <!-- Modal window. used [inert] in js 
-        for close move keyboard :focus with out modal windows -->
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button class="btn-icon btn-modal" data-modal-close>
-                <svg class="btn-modal-icon">
-                    <use href="./images/icons-2.svg#icon-close"></use>
-                </svg>
-            </button>
-        </div>
-    </div>
-
     <header class="header">
         <!-- Header -->
         <div class="container">
@@ -50,6 +38,20 @@
             </div>
         </div>
     </header>
+
+    <section class="modal-window">
+        <!-- Modal window. used [inert] in js 
+             for close move keyboard :focus with out modal windows -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="btn-icon btn-modal" type="button" data-modal-close>
+                    <svg class="btn-modal-icon">
+                        <use href="./images/icons-2.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
 
     <main class="main">
         <!-- Main -->
