@@ -129,12 +129,13 @@ ol,
     outline: none;  
 }
 
-.menu-item-link {
+.current {
     position: relative;
+    color: var(--color-iris);
 }
-.menu-item-link::after {
+ .current::after {
     content: "";
-
+    
     position: absolute;
     bottom: 0;
     left: 0;
@@ -144,18 +145,8 @@ ol,
     height: 5px;
     background-color: var(--color-btn-active);
     border-radius: 2px;
-
+    
     margin-bottom: -24px;
-
-    opacity: 0;
-    transform: scaleX(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                
-}
-
-.current {
-    color: var(--color-iris);
  }
 
 .contact-item-link[href*="tel:"]{ text-transform: uppercase; }
@@ -172,11 +163,6 @@ ol,
 .menu-item-link:focus { 
     color: var(--color-iris); 
 }
-.menu-item-link:hover::after {
-    opacity: 1;
-    transform: scaleX(1);
-}
-
 
 .contact-item-link { font-size: var(--fs-contact); }
 .contact-item-link:active { color: var(--color-iris); }
