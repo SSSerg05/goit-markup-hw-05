@@ -39,18 +39,6 @@
         </div>
     </header>
 
-    <!-- Modal window. used [inert] in js 
-        for close move keyboard :focus with out modal windows -->
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button class="btn-icon btn-modal" type="button" data-modal-close>
-                <svg class="btn-modal-icon">
-                    <use href="./images/icons-2.svg#icon-close"></use>
-                </svg>
-            </button>
-        </div>
-    </div>
-
     <main class="main">
         <!-- Main -->
         <section class="section presentation bg-image center">
@@ -487,6 +475,18 @@
             </ul>
         </div>
     </footer>
+
+    <!-- Modal window. used [inert] in js 
+            for close move keyboard :focus with out modal windows -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn-icon btn-modal" type="button" data-modal-close>
+                <svg class="btn-modal-icon">
+                    <use href="./images/icons-2.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
 
     <script src="./js/modal.js"></script>
 </body>
